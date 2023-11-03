@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 20px;
+    min-width: 600px;
+    min-height: 400px;
+    resize: both;
+    overflow: hidden;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+textarea {
+    flex: 1;
+    min-height: 150px;
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;
+}
+
+select, button {
+    font-size: 14px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex: 1;
+}
+
+#languageSelect {
+    flex-shrink: 0;
+}
+
+#sourceCode, #resultCode {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    select, button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #sourceCode, #resultCode {
+        width: 100%;
+        margin: 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}

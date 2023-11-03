@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>Code Translator</title>
+  </head>
+  <body>
+    <textarea id="sourceCode" placeholder="Enter source code..."></textarea>
+    <select id="languageSelect">
+      <option value="javascript">JavaScript</option>
+      <option value="python">Python</option>
+      <option value="java">Java</option>
+      <option value="csharp">C#</option>
+      <option value="typescript">TypeScript</option>
+      <option value="php">PHP</option>
+      <option value="cpp">C++</option>
+      <option value="ruby">Ruby</option>
+      <option value="swift">Swift</option>
+      <option value="kotlin">Kotlin</option>
+      <option value="go">Go</option>
+      <!-- Add more languages as needed -->
+    </select>
+
+    <button id="convertButton">Convert</button>
+    <textarea id="resultCode" placeholder="Result..."></textarea>
+    <script src="popup.js"></script>
+  </body>
+</html>
